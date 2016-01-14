@@ -57,7 +57,7 @@ class Home extends CI_Controller {
 			$this->form_validation->set_message('date_valid', 'Invalid date!');
 			return FALSE;
 		}
-		elseif (($month === "04") or ($month === "06") or ($month === "09") or ($month === "11") and $day >30) {
+		elseif ((($month === "04") or ($month === "06") or ($month === "09") or ($month === "11")) and $day >30) {
 			$this->form_validation->set_message('date_valid', 'Invalid date!');
 			return FALSE;
 		}
