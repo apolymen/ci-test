@@ -16,7 +16,7 @@
 			<label for="xDate">Date</label>
 		</div>
 		<div>
-			<input id="xDate" type="text" name="xDate" placeholder="Date (yyyy-mm-dd)" value="<?php echo set_value('xDate'); ?>" />
+			<input id="xDate" type="text" name="xDate" placeholder="Date (yyyy-mm-dd)" value="<?php echo set_value('xDate'); ?>" readonly />
 			<span><?php echo form_error('xDate'); ?></span>
 		</div>
 
