@@ -11,11 +11,11 @@ class Home extends CI_Controller {
 
 	public function index() {
 		//$this->one();
-		$this->two();
+		$this->one();
 	}
 
 	public function one() {
-		$query = $this->retrieve_model->get_fields();
+		$query = $this->retrieve_model->get_all();
 		$data['people'] = $query->result();
 		$this->load->view('home_view', $data);
 	}
